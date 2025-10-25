@@ -1,4 +1,4 @@
-﻿const FEED_LOCAL = "data.json";
+const FEED_LOCAL = 'https://cdn.jsdelivr.net/gh/GCA-Classroom/apod/data.json';
 const factList = ["A day on Venus is longer than a year on Venus.","Light from the Sun takes about 8 minutes to reach Earth."];
 
 function pickFact(){ const el=document.getElementById("factBox"); if(el) el.textContent="Did you know? "+factList[Math.floor(Math.random()*factList.length)]; }
@@ -52,3 +52,4 @@ document.addEventListener("DOMContentLoaded",()=>{
   const modal=document.getElementById("modal"); if(modal) modal.addEventListener("click",(e)=>{ if(e.target.id==="modal") closeModal(); });
   if(btn) btn.click();
 });
+
