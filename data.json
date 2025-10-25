@@ -1,0 +1,26 @@
+﻿[
+  {
+    "date": "' + (Get-Date).ToString("yyyy-MM-dd") + '",
+    "title": "Sample APOD 0",
+    "explanation": "Sample APOD entry for offline testing.",
+    "url": "https://via.placeholder.com/800x450.png?text=APOD+0",
+    "hdurl": "https://via.placeholder.com/1200x675.png?text=APOD+0",
+    "media_type": "image"
+  },
+  {
+    "date": "' + (Get-Date).AddDays(-1).ToString("yyyy-MM-dd") + '",
+    "title": "Sample APOD 1",
+    "explanation": "Sample APOD entry for offline testing.",
+    "url": "https://via.placeholder.com/800x450.png?text=APOD+1",
+    "hdurl": "https://via.placeholder.com/1200x675.png?text=APOD+1",
+    "media_type": "image"
+  },
+  {
+    "date": "' + (Get-Date).AddDays(-2).ToString("yyyy-MM-dd") + '",
+    "title": "Sample APOD 2",
+    "explanation": "Sample APOD entry for offline testing.",
+    "url": "https://via.placeholder.com/800x450.png?text=APOD+2",
+    "hdurl": "https://via.placeholder.com/1200x675.png?text=APOD+2",
+    "media_type": "image"
+  }
+]

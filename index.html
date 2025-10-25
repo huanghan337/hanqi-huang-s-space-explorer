@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NASA Space Explorer — Classroom APOD Feed (Offline)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>NASA Space Explorer</h1>
+  <p class="subtitle">Classroom APOD feed included locally (no network required).</p></header>
+
+  <main class="container">
+    <section class="controls">
+      <label>Start date: <input id="startDate" type="date" /></label>
+      <label>End date: <input id="endDate" type="date" /></label>
+      <button id="fetchBtn">Fetch APODs</button>
+      <p class="note">Data source: local copy of instructor-provided feed (data.json).</p>
+    </section>
+    <aside class="fact-box" id="factBox">Did you know? Loading fact...</aside>
+    <section id="gallery" class="gallery"></section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="close-btn" aria-label="Close">&times;</button>
+      <div id="modalMedia" class="modal-media"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate" class="muted"></p>
+      <p id="modalExplanation"></p>
+    </div>
+  </div>
+
+  <footer><p>Offline classroom build — good for submission and demos.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
